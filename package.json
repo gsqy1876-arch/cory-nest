@@ -16,7 +16,7 @@
     "build": "nest build",
     "start": "nest start",
     "start:dev": "nest start --watch",
-    "start:prod": "node dist/main",
+    "start:prod": "node dist/src/main",
     "typeorm": "ts-node -r tsconfig-paths/register ./node_modules/typeorm/cli.js",
     "migration:run": "pnpm run typeorm -- migration:run -d src/config/data-source.ts",
     "seed:run": "ts-node -r tsconfig-paths/register -r dotenv/config scripts/seed.ts"
@@ -57,6 +57,7 @@
     "@types/passport-jwt": "^4.0.0",
     "ts-loader": "^9.5.1",
     "ts-node": "^10.9.2",
-    "tsconfig-paths": "^4.2.0"
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.9.3"
   }
 }
